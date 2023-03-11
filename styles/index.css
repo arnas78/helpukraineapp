@@ -1,0 +1,294 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: rgb(247, 247, 251);
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100vh;
+}
+main {
+  padding-top: 8rem;
+  max-width: 1070px;
+  margin: 0 auto;
+  padding-bottom: 8rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #31394a;
+}
+p,
+li {
+  color: #767676;
+}
+
+li {
+  list-style: none;
+}
+
+.btn {
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  transition: 0.2s ease-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-impact {
+  color: #31394a;
+  border: 0.15rem solid #31394a;
+}
+
+.join-container {
+  margin-top: 2rem;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn-join {
+  font-size: 1.25rem;
+  padding: 2rem;
+  width: 525px;
+}
+
+#btn-need {
+  border: 0.15rem #0057b7 solid;
+  background: #0057b7;
+  color: #ffdd00;
+}
+
+#btn-help {
+  border: 0.15rem #ffdd00 solid;
+  background: #ffdd00;
+  color: #0057b7;
+}
+
+#btn-help:hover {
+  border: 0.15rem #0057b7 solid;
+}
+
+#btn-need:hover {
+  border: 0.15rem #ffdd00 solid;
+}
+
+.impact {
+  color: white;
+  background-color: #ffdd00;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+}
+.impact-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin: 2rem 0 2.5rem 0;
+}
+
+.impact-container div p {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.impact-digit {
+  min-width: 220px;
+  font-size: 5rem;
+  margin: 0.25rem 0;
+}
+
+.nav-links li a {
+  position: relative;
+  display: block;
+  padding: 0.25rem 2rem;
+  text-transform: capitalize;
+  color: #31394a;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.nav-links li p {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  margin: 0;
+  text-transform: capitalize;
+  color: #31394a;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links li span {
+  position: relative;
+  display: block;
+  padding: 0.25rem 2rem;
+  text-transform: capitalize;
+  color: #31394a;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  width: 100%;
+  background: white;
+  z-index: 2000;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.nav-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+
+.nav-links {
+  height: 0;
+  padding-left: 0;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding: 1rem 0;
+  }
+  .nav-links {
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-header {
+    padding: 0 0;
+  }
+  .nav-link {
+    padding: 0 0;
+    margin: 0 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-container {
+  margin: 0 auto;
+  border-radius: 0 0 0.25rem 0.25rem;
+  width: 100vw;
+  background-color: #0057b7;
+  display: flex;
+  justify-content: center;
+}
+.footer-container h2 {
+  color: white;
+  padding: 0.25rem 0;
+}
+
+.intro-info {
+  margin: 2rem 0 3rem 0;
+}
+
+.collapsible {
+  background-color: transparent;
+  color: #31394a;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  border-radius: 0.25rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  outline: none;
+  font-size: 1.25rem;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #fff6bcf1;
+}
+
+.collapsible:after {
+  content: "\002B";
+  color: #31394a;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.collapsible span {
+  margin-right: 1rem;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  text-align: left;
+  padding: 0 18px;
+  max-height: 0;
+  border-radius: 0 0 0.25rem 0.25rem;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+}
+
+.info-slide {
+  margin: 1rem 0;
+}
+
+.info-list,
+.section-info li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #0057b7; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1rem; /* Also needed for space (tweak if needed) */
+  margin-left: -1rem; /* Also needed for space (tweak if needed) */
+}
+
+.section-info {
+  text-align: left;
+}
+
+.register-info-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.register-info-container div {
+  max-width: 510px;
+}
+
+.section-info div h3 {
+  margin: 2.5rem 0 0.5rem 0;
+}
+
+.text-bold {
+  font-weight: bold;
+}

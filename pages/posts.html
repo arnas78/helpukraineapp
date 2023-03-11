@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../scripts/modules/nav.js" defer></script>
+
+    <link rel="stylesheet" href="../styles/posts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <title lang="lt">Skelbimai</title>
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+    <div class="details-background"></div>
+    <div class="container-details">
+      <div>
+        <button class="btn-close opacity-none">
+          <span><i class="fa-solid fa-chevron-left"></i></span>
+        </button>
+        <h1 id="user-type">Ieškau pagalbos!</h1>
+        <div class="profile-container">
+          <div>
+            <img
+              class="img-profile"
+              src="../images/profile-picture-placeholder.png"
+              alt="profile"
+            />
+          </div>
+          <div>
+            <h3 id="details-name">Pavardenis V.</h3>
+            <p class="fa-solid fa-phone">
+              <span id="details-phone">+37061234567</span>
+            </p>
+            <p class="fa-solid fa-location-pin">
+              <span id="details-address">Kaunas, Dainava</span>
+            </p>
+          </div>
+        </div>
+        <div class="container-info">
+          <div>
+            <!-- <p><span class="text-bold">Data:</span> Prieš 3 dienas</p> -->
+            <span class="text-bold">Tipas:</span>
+            <p id="post-type">Laikinas būstas</p>
+          </div>
+          <div class="container-desc">
+            <span class="text-bold">Aprašymas: </span>
+            <p id="post-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis repellat enim exercitationem magni eligendi inventore,
+              itaque illum iusto beatae vitae esse velit ut. Id quidem quisquam,
+              rerum ratione eum asperiores sint adipisci ut itaque esse dolor?
+              Nam quod harum rerum!
+            </p>
+          </div>
+        </div>
+        <div class="container-btn">
+          <button class="btn btn-help">Susisiekti</button>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section>
+        <div class="container-intro">
+          <h1 lang="lt">Pagalbos prašymai</h1>
+          <p lang="lt">
+            Žemiau skelbiami ukrainiečių pagalbos prašymo skelbimai.
+          </p>
+          <p lang="lt">
+            Paspaudus ant skelbimo matoma daugiau informacijos, galite įvykdyti
+            prašymą, susisiekti su žmogumi asmeniškai.
+          </p>
+        </div>
+        <div class="container-post-info">
+          <div class="container-add-new"></div>
+          <div class="sort-container">
+            <h4 lang="lt">Rūšiuoti:</h4>
+            <select id="type-sort">
+              <option lang="lt" value="any">Visi</option>
+              <option lang="lt" value="stay">Laikinas būstas</option>
+              <option lang="lt" value="job">Darbo pasiūlymas</option>
+              <option lang="lt" value="clothes">Drabužiai</option>
+              <option lang="lt" value="food">Maistas</option>
+              <option lang="lt" value="meds">Vaistai</option>
+              <option lang="lt" value="other-items">Kiti daiktai</option>
+              <option lang="lt" value="other">Kita</option>
+            </select>
+            <select id="user-type-sort">
+              <option lang="lt" value="any">Visi</option>
+              <option lang="lt" value="seeker">Prašymai</option>
+              <option lang="lt" value="volunteer">Siūlymai</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="container-posts"></div>
+      </section>
+      <footer>
+        <div class="footer-container">
+          <h2 lang="lt">Susisiekime</h2>
+        </div>
+      </footer>
+      <script src="../scripts/posts.js" type="module"></script>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,299 @@
+body {
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  background: #31394a;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100vh;
+}
+main {
+  padding-top: 6rem;
+  max-width: 1070px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #31394a;
+}
+p,
+li {
+  color: #767676;
+}
+
+li {
+  list-style: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-container {
+  margin: auto;
+  border-radius: 0 0 0.25rem 0.25rem;
+  width: 100vw;
+  background-color: #0057b7;
+  display: flex;
+  justify-content: center;
+}
+.footer-container h2 {
+  color: white;
+  padding: 0.5rem 0;
+}
+
+.btn {
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  transition: 0.2s ease-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.nav-links li a {
+  position: relative;
+  display: block;
+  padding: 0.25rem 2rem;
+  text-transform: capitalize;
+  color: #31394a;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.nav-links li p {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  margin: 0;
+  text-transform: capitalize;
+  color: #31394a;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links li span {
+  position: relative;
+  display: block;
+  padding: 0.25rem 2rem;
+  text-transform: capitalize;
+  color: #31394a;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  width: 100%;
+  background: white;
+  z-index: 2000;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.nav-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+
+.nav-links {
+  height: 0;
+  padding-left: 0;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding: 1rem 0;
+  }
+  .nav-links {
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-header {
+    padding: 0 0;
+  }
+  .nav-link {
+    padding: 0 0;
+    margin: 0 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+.img-profile {
+  height: 48px;
+  width: 48px;
+  border-radius: 5rem;
+}
+
+.container-header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background: white;
+  border-radius: 0.25rem;
+}
+
+.container-header h3,
+p {
+  margin: 0;
+}
+
+.fa-chevron-left {
+  color: #31394a;
+  border-radius: 0.25rem;
+  font-size: 1.5rem;
+  transition: 0.3s ease-out;
+}
+
+.btn-close {
+  background: transparent;
+  border: none;
+}
+
+.btn-close:hover {
+  cursor: pointer;
+}
+
+.chatting-container {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  border-radius: 0.25rem;
+  padding: 1rem 0;
+  width: 800px;
+  box-shadow: #31394a 0px 10px 24px;
+  position: relative;
+}
+
+.container-chatting {
+  width: 800px;
+  margin: 1rem 2rem 1rem 2rem;
+}
+
+.container-users {
+  flex: 1 2;
+}
+
+.header {
+  color: white;
+  margin: 2.6rem 0;
+}
+
+.single-user {
+  margin: 1rem 2rem;
+  display: flex;
+  background: white;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+}
+
+#user-active {
+  background: #fff6bcf1;
+  box-shadow: #fff6bcf1 0px 2px 12px;
+}
+
+.single-message {
+  padding: 0.75rem 1rem;
+  background: #ffdd00;
+  margin: 1.5rem 0 1.5rem 1rem;
+  max-width: 70%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 1rem 1rem 1rem 0;
+  text-align: left;
+}
+
+#chat-owner {
+  margin-left: auto;
+  margin-right: 1rem;
+  border-radius: 1rem 1rem 0 1rem;
+
+  background: #0057b7;
+}
+
+#chat-owner p {
+  color: white;
+}
+
+.messages-container {
+  height: 500px;
+  margin-top: 1rem;
+  border-radius: 0.25rem 0.25rem 0 0;
+  background: white;
+
+  overflow-y: scroll;
+}
+
+#user-status {
+  font-weight: bold;
+}
+
+.chat-p {
+  color: #31394a;
+  font-size: 1rem;
+}
+
+.chat-container {
+  background: rgb(225, 225, 225);
+  border-radius: 0 0 0.25rem 0.25rem;
+  padding: 1rem;
+}
+
+.fa-chevron-right {
+  font-size: 1.5rem;
+}
+
+.chat-send {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  width: 80%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.section-chat {
+  padding-bottom: 6rem;
+}
+
+#user-you {
+  color: white;
+  margin: 1.25rem 0;
+  font-size: 2rem;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title lang="lt">Prisiregistruokite</title>
+
+    <script src="../scripts/modules/nav.js" defer></script>
+    <link rel="stylesheet" href="../styles/signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="background-blue">
+    <header>
+      <nav><!-- created with nav.js--></nav>
+    </header>
+
+    <main>
+      <h1 lang="lt" class="title">Registracija</h1>
+      <div class="container-signup">
+        <section>
+          <div class="container-switch">
+            <h3 lang="lt">Noriu padėti</h3>
+            <label class="switch">
+              <input id="checkbox" type="checkbox" name="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <h3 lang="lt">Ieškau pagalbos</h3>
+          </div>
+          <form id="signup-form">
+            <div class="input-container">
+              <label lang="lt" for="signup_email">El. paštas</label>
+              <input type="email" id="signup_email" />
+            </div>
+            <div class="input-container">
+              <label lang="lt" for="signup_name_surname">Vardas, pavardė</label>
+              <input type="text" id="signup_name_surname" />
+            </div>
+
+            <div class="input-container">
+              <label lang="lt" for="signup_password">Slaptažodis</label>
+              <input type="password" id="signup_password" />
+            </div>
+            <div>
+              <input
+                lang="lt"
+                class="input-submit"
+                type="submit"
+                value="Registruotis"
+              />
+            </div>
+          </form>
+        </section>
+      </div>
+      <div class="container-signup">
+        <h4><a lang="lt" href="./login.html">Atgal į prisijungimą.</a></h4>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <h2 lang="lt">Susisiekime</h2>
+      </div>
+    </footer>
+    <script src="../scripts/signup.js" type="module"></script>
+  </body>
+</html>

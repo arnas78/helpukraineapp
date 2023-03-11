@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title lang="lt">Susirašinėjimai</title>
+    <script src="../scripts/modules/nav.js" defer></script>
+    <link rel="stylesheet" href="../styles/messenger.css" />
+    <script defer src="http://localhost:5510/socket.io/socket.io.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+    <main>
+      <section class="section-chat">
+        <div class="chatting-container">
+          <div class="container-chatting">
+            <div class="container-header">
+              <div></div>
+              <div>
+                <img
+                  class="img-profile"
+                  src="../images/profile-picture-placeholder.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h3 id="user-name"></h3>
+              </div>
+            </div>
+            <div class="container-chat">
+              <div class="messages-container"></div>
+
+              <div class="send-container">
+                <form class="chat-container">
+                  <input class="chat-send" type="text" />
+                  <button type="submit" class="btn-close opacity-none">
+                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-container">
+          <h2 lang="lt">Susisiekime</h2>
+        </div>
+      </footer>
+      <script src="../scripts/messenger.js" type="module"></script>
+    </main>
+  </body>
+</html>

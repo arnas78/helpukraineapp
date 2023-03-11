@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title lang="lt">Mano paskyra</title>
+    <!-- Custom JS -->
+    <script src="../scripts/modules/nav.js" defer></script>
+
+    <link rel="stylesheet" href="../styles/my-account.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+  </head>
+  <body>
+    <header>
+      <nav><!-- created with nav.js--></nav>
+    </header>
+    <div class="details-background"></div>
+    <div class="container-details">
+      <div>
+        <button class="btn-close opacity-none">
+          <span><i class="fa-solid fa-chevron-left"></i></span>
+        </button>
+        <h1 id="user-type">Ieškau pagalbos!</h1>
+        <div class="profile-container">
+          <div>
+            <img
+              class="img-profile"
+              src="../images/profile-picture-placeholder.png"
+              alt="profile"
+            />
+          </div>
+          <div>
+            <h3 id="details-name">Pavardenis V.</h3>
+            <p class="fa-solid fa-phone">
+              <span id="details-phone">+37061234567</span>
+            </p>
+            <p class="fa-solid fa-location-pin">
+              <span id="details-address">Kaunas, Dainava</span>
+            </p>
+          </div>
+        </div>
+        <div class="container-info">
+          <div>
+            <!-- <p><span class="text-bold">Data:</span> Prieš 3 dienas</p> -->
+            <span class="text-bold">Tipas:</span>
+            <p id="post-type">Laikinas būstas</p>
+          </div>
+          <div class="container-desc">
+            <span class="text-bold">Aprašymas: </span>
+            <p id="post-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis repellat enim exercitationem magni eligendi inventore,
+              itaque illum iusto beatae vitae esse velit ut. Id quidem quisquam,
+              rerum ratione eum asperiores sint adipisci ut itaque esse dolor?
+              Nam quod harum rerum!
+            </p>
+          </div>
+        </div>
+        <div class="container-btn">
+          <button class="btn btn-edit">
+            <a id="link-edit">Redaguoti</a>
+          </button>
+          <button class="btn btn-delete">Ištrinti</button>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="main-container">
+        <section class="user-intro">
+          <h1 id="current-user"></h1>
+          <button lang="lt" class="btn" id="user-logout-button">
+            Atsijungti
+          </button>
+        </section>
+        <section class="user-info">
+          <div>
+            <h2 lang="lt">Jūsų duomenys</h2>
+          </div>
+          <div class="container-inputs">
+            <div>
+              <input lang="lt" type="text" id="name" placeholder="Vardas" />
+              <input
+                lang="lt"
+                type="text"
+                id="email"
+                placeholder="El. paštas"
+                disabled
+              />
+              <input lang="lt" type="text" id="address" placeholder="Adresas" />
+              <input
+                lang="lt"
+                type="text"
+                id="phone"
+                placeholder="Telefono nr."
+              />
+            </div>
+
+            <div class="container-image">
+              <div>
+                <img
+                  id="display-image"
+                  src="../images/profile-picture-placeholder.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <button
+                  lang="lt"
+                  type="submit"
+                  class="btn"
+                  id="btn-image"
+                  onclick="document.getElementById('getFile').click()"
+                >
+                  Pasirinkite failą
+                </button>
+                <input type="file" id="getFile" style="display: none" />
+              </div>
+            </div>
+          </div>
+          <div class="container-update"></div>
+          <button lang="lt" type="submit" class="btn" id="btn-update">
+            Atnaujinti
+          </button>
+          <div class="container" id="image"></div>
+        </section>
+
+        <section>
+          <h2 lang="lt">Mano skelbimai</h2>
+          <div class="container-posts"></div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <h2 lang="lt">Susisiekime</h2>
+      </div>
+    </footer>
+    <script src="../scripts/my-account.js" type="module"></script>
+  </body>
+</html>

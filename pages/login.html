@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title lang="lt">Prisijunkite</title>
+    <script src="../scripts/modules/nav.js" defer></script>
+
+    <link rel="stylesheet" href="../styles/signup-login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav><!-- created with nav.js--></nav>
+    </header>
+
+    <main>
+      <h1 lang="lt" class="title">Prisijunkite</h1>
+      <div class="container-login">
+        <section>
+          <form id="login-form">
+            <div class="input-container">
+              <label lang="lt" for="login_email">El. paštas</label>
+              <input type="email" id="login_email" />
+            </div>
+            <div class="input-container">
+              <label lang="lt" for="login_password">Slaptažodis</label>
+              <input type="password" id="login_password" />
+            </div>
+            <div>
+              <input
+                lang="lt"
+                class="input-submit"
+                type="submit"
+                value="Prisijungti"
+              />
+            </div>
+          </form>
+        </section>
+      </div>
+      <div class="container-signup">
+        <h4 lang="lt">Naujas narys?</h4>
+        <a href="./signup.html" lang="lt">Prisiregistruokite.</a>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <h2 lang="lt">Susisiekime</h2>
+      </div>
+    </footer>
+    <script src="../scripts/signup-login.js" type="module"></script>
+  </body>
+</html>

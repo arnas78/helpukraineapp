@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../scripts/modules/nav.js" defer></script>
+
+    <link rel="stylesheet" href="../styles/edit-post.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <title lang="lt">Skelbimo keitimas</title>
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+    <main>
+      <div class="container-intro">
+        <h1 lang="lt">Tvarkykite skelbimą</h1>
+        <h4 lang="lt" class="text-red">* PRIVALOMI LAUKAI</h4>
+      </div>
+      <div class="container-form">
+        <form id="add-post-form">
+          <input lang="lt" type="text" id="name" placeholder="Vardas" />
+          <input lang="lt" type="text" id="address" placeholder="Adresas" />
+          <input lang="lt" type="text" id="phone" placeholder="Telefono nr." />
+          <textarea
+            lang="lt"
+            id="desc"
+            rows="10"
+            cols="10"
+            placeholder="Parašykite apie siūlomą pagalbą"
+          ></textarea>
+
+          <select id="type">
+            <option lang="lt" value="stay">Laikinas būstas</option>
+            <option lang="lt" value="job">Darbo pasiūlymas</option>
+            <option lang="lt" value="clothes">Drabužiai</option>
+            <option lang="lt" value="food">Maistas</option>
+            <option lang="lt" value="meds">Vaistai</option>
+            <option lang="lt" value="other-items">Kiti daiktai</option>
+            <option lang="lt" value="other">Kita</option>
+          </select>
+          <button lang="lt" class="input-submit">Išsaugoti</button>
+        </form>
+        <div class="container-details">
+          <div>
+            <div class="profile-container">
+              <div>
+                <img
+                  class="img-profile"
+                  src="../images/profile-picture-placeholder.png"
+                  alt="profile"
+                />
+              </div>
+              <div>
+                <h3 lang="lt" id="name-preview">Vardas Pavardė</h3>
+                <p class="fa-solid fa-phone">
+                  <span lang="lt" id="phone-preview">Telefono numeris</span>
+                </p>
+                <p class="fa-solid fa-location-pin">
+                  <span lang="lt" id="address-preview">Vietovė</span>
+                </p>
+              </div>
+            </div>
+            <div class="container-info">
+              <div class="preview">
+                <span lang="lt" class="text-bold">Tipas: </span>
+                <p id="type-preview"></p>
+              </div>
+              <div class="preview">
+                <span lang="lt" class="text-bold">Aprašymas: </span>
+                <p id="desc-preview">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                  reiciendis nisi repellat nemo, doloremque quam, quaerat totam
+                  quisquam neque laudantium consectetur minus architecto
+                  asperiores adipisci nobis aliquam debitis inventore
+                  consequuntur dolore quasi incidunt repudiandae, eius obcaecati
+                  voluptatibus. Temporibus totam aut tempora id eligendi
+                  blanditiis fugit mollitia culpa, obcaecati iste. Cupiditate.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <h2 lang="lt">Susisiekime</h2>
+      </div>
+    </footer>
+    <script src="../scripts/edit-post.js" type="module"></script>
+  </body>
+</html>
