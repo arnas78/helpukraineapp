@@ -1,7 +1,7 @@
 import { API_URL } from "./modules/constants.js";
 import { languages } from "../data/messenger.js";
 
-const socket = io("http://localhost:5510");
+const socket = io("https://helpukraineapp.netlify.app:5510");
 const messageContainer = document.querySelector(".messages-container");
 const messageForm = document.querySelector(".send-container");
 const messageInput = document.querySelector(".chat-send");
