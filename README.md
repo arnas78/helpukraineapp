@@ -4,4 +4,5 @@
 
 Built with HTML, CSS and JS, Node.js (Express)
 
-![My Image](./images/helpukraineapp.png)
+![My Image](./frontend/images/helpukraineapp.png)
+git p
