@@ -164,7 +164,7 @@ const addPicture = (e) => {
   formData.append("image", image_input.files[0]);
 
   if (image_input.files[0] != undefined) {
-    const data = fetch("http://localhost:5001/api/images", {
+    const data = fetch("https://helpukraineapp.netlify.app/api/images", {
       method: "POST",
       body: formData,
     }).catch((err) => ("Error occured", err));
@@ -176,7 +176,7 @@ const deletePicture = async () => {
 
   try {
     const data = await (
-      await fetch("http://localhost:5001/api/images/" + userId)
+      await fetch("https://helpukraineapp.netlify.app/api/images/" + userId)
     ).json();
 
     let imageId = data._id;
