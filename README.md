@@ -5,4 +5,3 @@
 Built with HTML, CSS and JS, Node.js (Express)
 
 ![My Image](./frontend/images/helpukraineapp.png)
-git p
