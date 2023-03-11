@@ -99,7 +99,6 @@ const generateNavigation = () => {
   li2.appendChild(a2);
   li3.appendChild(a3);
   li4.appendChild(a4);
-  li5.appendChild(a5);
   li6.appendChild(a6);
   li7.appendChild(a7);
   li8.appendChild(p1);
@@ -109,7 +108,7 @@ const generateNavigation = () => {
   ul.append(li1, li2, li3, li7, li8, li9, li10);
   if (localStorage.getItem("user")) {
     ul.textContent = "";
-    ul.append(li1, li2, li3, li4, li5, li6, li8, li9, li10);
+    ul.append(li1, li2, li3, li4, li6, li8, li9, li10);
   }
 
   ul.classList.add("nav-links");
