@@ -29,6 +29,8 @@ const loginUser = async (e) => {
       })
     ).json();
 
+    console.log(data);
+
     if (data.message === "User found") {
       localStorage.setItem("user", data.user._id);
       localStorage.setItem("username", data.user.name_surname);
