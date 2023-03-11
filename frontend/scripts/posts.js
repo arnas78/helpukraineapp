@@ -293,7 +293,7 @@ const btnHelpEl = document.querySelector(".btn-help");
 
 btnHelpEl.addEventListener("click", () => {
   document.location.href =
-    "https://helpukraineapp.netlify.app/frontend/pages/messenger.html";
+    "https://helpukraineapp.netlify.app/pages/messenger.html";
 });
 
 const elements = document.querySelectorAll("[lang]");

@@ -57,7 +57,7 @@ const signupUser = async (e) => {
     if (data.message === "User created") {
       localStorage.setItem("user", data.user._id);
       location.href =
-        "https://helpukraineapp.netlify.app/frontend/pages/my-account.html";
+        "https://helpukraineapp.netlify.app/pages/my-account.html";
     } else {
       alert(data.message);
     }

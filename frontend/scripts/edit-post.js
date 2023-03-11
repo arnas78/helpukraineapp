@@ -137,9 +137,7 @@ btnUpdate.addEventListener("click", () => {
   };
   console.log(newObj);
   updateUserData(newObj);
-  window.open(
-    "https://helpukraineapp.netlify.app/frontend/pages/my-account.html?"
-  );
+  window.open("https://helpukraineapp.netlify.app/pages/my-account.html?");
 });
 
 const elements = document.querySelectorAll("[lang]");
