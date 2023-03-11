@@ -292,7 +292,8 @@ function getTypeText(type) {
 const btnHelpEl = document.querySelector(".btn-help");
 
 btnHelpEl.addEventListener("click", () => {
-  document.location.href = "http://127.0.0.1:5500/pages/messenger.html";
+  document.location.href =
+    "http://127.0.0.1:5500/frontend/pages/messenger.html";
 });
 
 const elements = document.querySelectorAll("[lang]");

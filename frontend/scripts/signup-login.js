@@ -32,7 +32,7 @@ const loginUser = async (e) => {
     if (data.message === "User found") {
       localStorage.setItem("user", data.user._id);
       localStorage.setItem("username", data.user.name_surname);
-      location.href = "http://127.0.0.1:5500/index.html";
+      location.href = "http://127.0.0.1:5500/frontend/index.html";
     } else {
       alert(data.message);
     }
@@ -68,7 +68,7 @@ const signupUser = async (e) => {
 
     if (data.message === "User created") {
       localStorage.setItem("user", data.user._id);
-      location.href = "http://127.0.0.1:5500/pages/my-account.html";
+      location.href = "http://127.0.0.1:5500/frontend/pages/my-account.html";
     } else {
       alert(data.message);
     }

@@ -104,7 +104,7 @@ const addPost = async (e) => {
       addPostFormElement.reset();
       getData();
       alert("Skelbimas sėkmingai sukurtas!");
-      window.open("http://127.0.0.1:5500/pages/my-account.html?");
+      window.open("http://127.0.0.1:5500/frontend/pages/my-account.html?");
     } else {
       alert("Skelbimas nesukurtas, pabandykite iš naujo.");
     }

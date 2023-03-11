@@ -137,7 +137,7 @@ btnUpdate.addEventListener("click", () => {
   };
   console.log(newObj);
   updateUserData(newObj);
-  window.open("http://127.0.0.1:5500/pages/my-account.html?");
+  window.open("http://127.0.0.1:5500/frontend/pages/my-account.html?");
 });
 
 const elements = document.querySelectorAll("[lang]");

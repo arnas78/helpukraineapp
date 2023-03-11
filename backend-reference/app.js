@@ -76,8 +76,8 @@ const upload = multer({
 
 // Routes
 
-app.get("/", function (req, res) {
-  res.render("../index.html");
+app.get("/", (req, res) => {
+  res.send("helpukraine API");
 });
 
 app.get("/api/images/:id", async (req, res) => {

@@ -56,7 +56,7 @@ const signupUser = async (e) => {
 
     if (data.message === "User created") {
       localStorage.setItem("user", data.user._id);
-      location.href = "http://127.0.0.1:5500/pages/my-account.html";
+      location.href = "http://127.0.0.1:5500/frontend/pages/my-account.html";
     } else {
       alert(data.message);
     }
