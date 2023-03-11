@@ -157,7 +157,7 @@ app.post("/api/users/login", async (req, res) => {
     const user = await User.findOne(userData);
 
     if (user) {
-      res.json({ message: "User founded", user });
+      res.json({ message: "User found", user });
     } else {
       res.json({ message: "User with given email and password not found" });
     }

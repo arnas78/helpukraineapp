@@ -57,7 +57,7 @@ const getUserData = async () => {
 
 const logoutUser = () => {
   localStorage.removeItem("user");
-  location.href = "http://127.0.0.1:5500/frontend/index.html";
+  location.href = "https://helpukraineapp.netlify.app/frontend/index.html";
 };
 
 // Events
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (localStorage.getItem("user")) {
     getUserData();
   } else {
-    location.href = "http://127.0.0.1:5500/frontend/index.html";
+    location.href = "https://helpukraineapp.netlify.app/frontend/index.html";
   }
 });
 
