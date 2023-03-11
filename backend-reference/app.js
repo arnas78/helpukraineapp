@@ -76,6 +76,10 @@ const upload = multer({
 
 // Routes
 
+app.get("/", function (req, res) {
+  res.render("index.html");
+});
+
 app.get("/api/images/:id", async (req, res) => {
   const userId = req.params.id;
   try {
